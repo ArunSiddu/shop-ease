@@ -1,10 +1,10 @@
-<div class="toolbar">
+<div class="header-bar">
   <img (click)="redirect('home')"
     width="40"
-    alt="ShopEase Logo" style="cursor: pointer;"
+    alt="ShopEase Logo" class="cursor-pointer"
     src="assets/ShopEase-logo.png"
   />
-  <span (click)="redirect('home')" style="cursor: pointer;">ShopEase</span>
+  <span (click)="redirect('home')" class="cursor-pointer">ShopEase</span>
     <div class="spacer"></div>
     <div class="menus">
       <a aria-label="Home" target="_blank" rel="noopener" 
@@ -23,11 +23,7 @@
       </a>
     </div>
     <div class="mobile-menu">
-      <!-- <i class="fa fa-bars" aria-hidden="true"></i> -->
-
-
       <div class="dropdown">
-        <!-- <button class="dropbtn">Dropdown</button> -->
         <i class="fa fa-bars" aria-hidden="true"></i>
         <div class="dropdown-content">
         <a (click)="redirect('home')" >Home</a>
@@ -36,23 +32,6 @@
         <a>Contact</a>
         </div>
       </div>
-
-      <!-- <button mat-button [matMenuTriggerFor]="menu">Menu</button>
-        <i class="fa fa-bars" aria-hidden="true" [matMenuTriggerFor]="menu"></i>
-      <mat-menu #menu="matMenu">
-        <button mat-menu-item>Item 1</button>
-        <button mat-menu-item>Item 2</button>
-      </mat-menu> -->
-
-
-      <!-- <i class="fa fa-bars" for="menu" aria-hidden="true"></i>
-      <select name="menus" id="menu" #menu>
-        <option default>Home</option>
-        <option>Products</option>
-        <option>Clothing</option>
-        <option>Electronics</option>
-      </select> -->
-
     </div>
 
 </div>

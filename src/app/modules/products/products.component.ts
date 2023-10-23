@@ -8,13 +8,6 @@ import { debounceTime, Subject } from 'rxjs';
 })
 export class ProductsComponent implements OnInit{
 
-  //categoryTypeList = ['books', 'clothing', 'electronics'];
-  categoryTypeList: any[] = [
-    {value: 'all', viewValue: 'All'},
-    {value: 'books', viewValue: 'Books'},
-    {value: 'clothing', viewValue: 'Clothing'},
-    {value: 'electronics', viewValue: 'Electronics'},
-  ];
   displayProductList: any = [];
   filterType = null;
   searchText: string = '';
@@ -67,11 +60,9 @@ export class ProductsComponent implements OnInit{
   constructor() { }
 
   ngOnInit(): void {
-    console.log("Product screen");
     this.displayProductList = [...this.productList];
-
+    // Search text wait for 1000 ms to init serch function
     this.searchTextSub.pipe(debounceTime(1000)).subscribe(search => {
-      console.log("search Text", search);
       this.searchText = search;
       if(this.searchText.length > 0){
         if(this.filterType !== 'all'){
@@ -91,8 +82,7 @@ export class ProductsComponent implements OnInit{
     });
   }
 
-  onSelected(selectedCategory: any){
-    console.log("selectedCategory", selectedCategory);   
+  onSelected(selectedCategory: any){ 
     this.filterType = selectedCategory;
     if(selectedCategory !== 'all'){     
       if(this.searchText.length > 0){
@@ -126,6 +116,5 @@ export class ProductsComponent implements OnInit{
     this.displayProductList = updatedList.filter((product: any) => {
       return product.name.toLowerCase().includes(this.searchText.toLowerCase());
     });
-    console.log("this.displayProductList", this.displayProductList);
   }
 }

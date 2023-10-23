@@ -1,4 +1,4 @@
-.toolbar {
+.header-bar {
     position: sticky;
     top: 0;
     left: 0;
@@ -16,7 +16,7 @@
     flex: 1;
   }
 
-  .toolbar img {
+  .header-bar img {
     margin: 0 16px;
   }
 
@@ -25,6 +25,10 @@
     padding-right: 5px;
     cursor: pointer;
    }
+
+  .cursor-pointer {
+    cursor: pointer;
+  }
 
    .menus{
     a,
@@ -59,8 +63,6 @@
       margin-right: 20px;
     }
   }
-
-
 
   .dropbtn {
     background-color: #4CAF50;

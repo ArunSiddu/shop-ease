@@ -1,219 +1,57 @@
-.product-card {
-  all: unset;
-  border-radius: 4px;
-  border: 1px solid #eee;
-  background-color: #fafafa;
-  height: 250px;
-  margin: 0 8px 16px;
-  padding: 16px;
+.product-search{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  transition: all 0.2s ease-in-out;
-  line-height: 24px;
+  padding: 0px 10px;
+
+  .product-drop-down {
+    min-height: 25px;
+    margin: 0px 10px;
+  }
+  
+  .category-filter {
+    display: flex; 
+    align-items: center;
+  }
+  
+  .search-input {
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    min-width: 280px;
+  }
 }
 
-.product-card-test {
+
+
+.product-container {
+  padding: 15px;
+
+  .product-card {
     border: 1px solid #eee;
     background-color: #fafafa;
     padding: 5px;
     border-radius: 4px;
-}
 
-.product-image-test{
-  height: 300px;
-  overflow: hidden;
-}
-
-.product-button{
-  width:100%
-}
-
-.product-image{
-  display: flex;
-  justify-content: center;
-}
-
-.product-form {
-  min-width: 150px;
-  max-width: 500px;
-  width: 100%;
-}
-
-.product-full-width {
-  width: 100%;
-}
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 8px 0;
+    .product-image{
+      height: 300px;
+      overflow: hidden;
+      }
+      
+      .product-button{
+      width:100%
+      }
   }
+}
 
-  p {
-    margin: 0;
-  }
-
-  .spacer {
-    flex: 1;
-  }
-
-
-
-  .toolbar img {
-    margin: 0 16px;
-  }
-
-  .content {
-    display: flex;
-    margin: 20px auto 50px;
-    padding: 0 16px;
-    max-width: 960px;
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+  .product-search{
     flex-direction: column;
-    align-items: center;
+    align-items: baseline;
   }
-
-  .card svg.material-icons path {
-    fill: #888;
+  .search-bar{
+    margin-top:5px;
   }
-
-  .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 16px;
-  }
-
-
-
-  .card-container .card:not(:last-child) {
-    margin-right: 0;
-  }
-
-  .card.card-small {
-    height: 16px;
-    width: 168px;
-  }
-
-  .card-container .card:not(.highlight-card) {
-    cursor: pointer;
-  }
-
-  .card-container .card:not(.highlight-card):hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
-  }
-
-  .card-container .card:not(.highlight-card):hover .material-icons path {
-    fill: rgb(105, 103, 103);
-  }
-
-  .card.highlight-card {
-    background-color: #1976d2;
-    color: white;
-    font-weight: 600;
-    border: none;
-    width: auto;
-    min-width: 30%;
-    position: relative;
-  }
-
-  .card.card.highlight-card span {
-    margin-left: 60px;
-  }
-
-
-
-  .menu-link{
-    padding-left: 5px;
-    padding-right: 5px;
-    cursor: pointer;
-   }
-
-   .menus{
-    a,
-    a:visited,
-    a:hover {
-      color: #ffffff;
-      text-decoration: none;
-    }
-  
-    a:hover {
-      color: #f58739;
-    }
-   }
-
-//   footer {
-//     margin-top: 8px;
-//     display: flex;
-//     align-items: center;
-//     line-height: 20px;
-//   }
-
-//   footer a {
-//     display: flex;
-//     align-items: center;
-//   }
-
-  /* Responsive Styles */
-  @media screen and (max-width: 767px) {
-    .card-container {
-      width: 100%;
-    }
-
-    .card:not(.highlight-card) {
-      height: 16px;
-      margin: 8px 0;
-    }
-
-    .card.highlight-card span {
-      margin-left: 72px;
-    }
-
-  }
-
-  @media screen and (max-width: 575px) {
-    // svg#rocket-smoke {
-    //   display: none;
-    //   visibility: hidden;
-    // }
-  }
-
-
-  .pro-search{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 10px;
-  }
-
-
-    /* Responsive Styles */
-    @media screen and (max-width: 767px) {
-      .pro-search{
-        flex-direction: column;
-        align-items: baseline;
-      }
-
-      .search-bar{
-        margin-top:5px;
-      }
-  
-    }
-  
-    @media screen and (min-width: 768px) {
-      .mobile-menu{
-        display: none;
-        visibility: hidden;
-      }
-    }
-
-    product-drop-down {
-      min-height: 25px;
-      margin: 0px 10px;
-    }
+}
