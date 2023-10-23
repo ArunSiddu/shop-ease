@@ -24,44 +24,44 @@ export class ProductsComponent implements OnInit{
     {
       name: "Harry Potter",
       categoryType: "books",
-      imagePath: "../../../assets/product-image/harry-potter.jpg",
-      price: "$95"
+      imagePath: "assets/product-image/harry-potter.jpg",
+      price: "$5"
     },
     {
       name: "Rich Dad Poor Dad",
       categoryType: "books",
-      imagePath: "../../../assets/product-image/rich-dad-poor-dad.png",
-      price: "$95"
+      imagePath: "assets/product-image/rich-dad-poor-dad.png",
+      price: "$7"
     },
     {
       name: "Casual Shirt",
       categoryType: "clothing",
-      imagePath: "../../../assets/product-image/casual-shirt.jpg",
-      price: "$95"
+      imagePath: "assets/product-image/casual-shirt.jpg",
+      price: "$15"
     },
     {
       name: "Formal Shirt",
       categoryType: "clothing",
-      imagePath: "../../../assets/product-image/formal-shirt.jpg",
-      price: "$95"
+      imagePath: "assets/product-image/formal-shirt.jpg",
+      price: "$18"
     },
     {
       name: "T-Shirt",
       categoryType: "clothing",
-      imagePath: "../../../assets/product-image/t-shirt.jpg",
-      price: "$95"
+      imagePath: "assets/product-image/t-shirt.jpg",
+      price: "$10"
     },
     {
       name: "IPhone 6S",
       categoryType: "electronics",
-      imagePath: "../../../assets/product-image/apple-iphone-6s.jpg",
-      price: "$95"
+      imagePath: "assets/product-image/apple-iphone-6s.jpg",
+      price: "$250"
     },
     {
       name: "Nokia 6300",
       categoryType: "electronics",
-      imagePath: "../../../assets/product-image/nokia-6300.jpg",
-      price: "$95"
+      imagePath: "assets/product-image/nokia-6300.jpg",
+      price: "$85"
     }
   ]
   constructor() { }
